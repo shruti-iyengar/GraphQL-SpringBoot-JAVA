@@ -1,0 +1,30 @@
+Steps to Test in Postman 
+Step 1:localhost:8080/employee/graphql with POST 
+
+Step 2: Click Body and select GraphQL.
+Give the below payload in the query text field 
+
+query {
+getEmployeeDetails(getEmployeeInputQuery: {empId: "A101"}) {
+	employeeList{
+		employeeList {
+			name
+			designation
+			addressList{
+			    addressType
+			    zipCode
+			}
+		    department{
+		        fullName
+		    }
+			reportingToDetails{
+			    lead
+			}
+			}
+		}
+	}
+}
+
+Step 3 :
+Keep changing the request and observe the response caters to the requested fields
+eg : also add deptId under department and manager under reportingToDetails

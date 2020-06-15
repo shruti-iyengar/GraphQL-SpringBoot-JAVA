@@ -1,0 +1,44 @@
+input GetEmployeeInputQuery {
+	empId:String!
+}
+
+type GetEmployeeOutput{
+	employeeList :EmployeeListType
+}
+
+type EmployeeListType{
+	 employeeList :[Employee]
+}
+
+type Employee{
+ 	empId:String!
+ 	name :String
+	designation:String
+	personalEmail:String
+	officialEmail:String!
+	dateOfBirth:String
+	addressList:[Address]
+	department:Department
+	reportingToDetails:ReportingToDetails
+}
+
+type Address{
+	 addressType:String!
+	 zipCode:String!
+	firstLine:String
+	area:String
+
+}
+
+type Department{
+	 deptId:String!;
+	 fullName:String;
+	 deptName:String;
+}
+
+type ReportingToDetails{
+  manager :String !
+	 lead :String
+	 mentor :String
+
+}

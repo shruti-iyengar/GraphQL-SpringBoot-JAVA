@@ -1,0 +1,146 @@
+###########INSERT Record 1####################
+db.getCollection('Employee').insert (
+ {
+"id":"A101",
+"name":"Shruti I",
+"gender":"Female"
+"designation":"Senior Software Developer",
+"officialEmail":"shrutii@ABC.com",
+"personalEmail":"shrutii@personal.com",
+"dateOfBirth":"01/01/1990",
+"department" :{
+"deptId":"101",
+"fullName":"Retail Engineering",
+"deptName":"RETAILENGG"
+},
+
+"address":{
+"temporary":{
+
+"firstLine":"1C street ",
+"area":"area one",
+"city":"Houston",
+"zipCode":"77001"
+},
+
+"permanent":{
+"firstLine":"1B street",
+"area":"area two",
+"city":"Mexico",
+"zipCode":"46958"
+
+},
+
+"official":{
+"firstLine":"1D street",
+"area":"area three",
+"city":"California",
+"zipCode":"90201"
+}
+},
+
+"reportingToDetails":{
+"mentor":"Ramesh K",
+"manager":"Mahesh B",
+"lead":"Suresh S"
+}
+}
+)
+
+############INSERT Record 2 #######################
+db.getCollection('Employee').insert (
+ {
+"id":"A102",
+"name":"Prithvi I",
+"gender":"Female",
+"designation":"Senior Software Developer",
+"officialEmail":"prithvii@ABC.com",
+"personalEmail":"prithvii@personal.com",
+"dateOfBirth":"01/01/1994",
+"department" :{
+"deptId":"102",
+"fullName":"Finance Engineering",
+"deptName":"FINENGG"
+},
+
+"address":{
+"temporary":{
+
+"firstLine":"1F Street ",
+"area":"area eight",
+"city":"Houston",
+"zipCode":"77001"
+},
+
+"permanent":{
+"firstLine":"1G Street",
+"area":"area two",
+"city":"Mexico",
+"zipCode":"46958"
+
+},
+
+"official":{
+"firstLine":"1D Street",
+"area":"area three",
+"city":"California",
+"zipCode":"90201"
+}
+},
+
+"reportingToDetails":{
+"mentor":"Ramesh K",
+"manager":"Mahesh B",
+"lead":"Suresh S"
+}
+}
+)
+
+############INSERT Record 3 #######################
+db.getCollection('Employee').insert (
+ {
+"id":"A103",
+"name":"Rajagopal S",
+"gender":"Male",
+"designation":"Member Technical Staff",
+"officialEmail":"rajagopals@ABC.com",
+"personalEmail":"rajagopals@personal.com",
+"dateOfBirth":"01/01/1989",
+"department" :{
+"deptId":"101,
+"fullName":"Retail Engineering",
+"deptName":"RETAILENGG"
+},
+
+"address":{
+"temporary":{
+
+"firstLine":"1P Street",
+"area":"area twenty",
+"city":"Houston",
+"zipCode":"77001"
+},
+
+"permanent":{
+"firstLine":"1Q Street",
+"area":"area nineteen",
+"city":"Mexico",
+"zipCode":"46958"
+
+},
+
+"official":{
+"firstLine":"1D Street",
+"area":"area eighteen",
+"city":"California",
+"zipCode":"90201"
+}
+},
+
+"reportingToDetails":{
+"mentor":"Reena K",
+"manager":"Tina B",
+"lead":"Shwetha S"
+}
+}
+)
